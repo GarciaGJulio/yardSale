@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root
+        {
+            --veryLightPink: #c7c7c7;
+            --textInputField: #f7f7f7;
+            --hospitalGreen: #acd9b2;
+            --white: #ffffff;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+
+        }
+
+        body 
+        {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+
+
+        }
+
+        
+        .mobileMenu{
+            padding: 24px;
+        }
+        
+        .mobileMenu a {
+            text-decoration: none; 
+            color: var(--black);
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        
+        .mobileMenu ul {
+            padding: 0;
+            margin: 24px 0 0;
+            list-style: none;
+
+        }
+        .mobileMenu ul:nth-child(1){
+            border-bottom: 1px solid var(--veryLightPink);
+        }
+
+        .mobileMenu ul li {
+        margin-bottom: 24px;
+        }
+        
+        .mobileMenu ul:last-child{
+            position: absolute;
+            bottom: 0;
+        }
+
+        .email li:first-child a {
+            font-size: var(--sm);
+            font-weight: 300;
+        }
+
+        .email li:last-child a{
+            color: var(--hospitalGreen);
+            font-size: var(--sm);
+            
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="mobileMenu">
+        <ul>
+            <li>
+                <a href="">CATEGORIES</a>
+            </li>
+            <li>
+                <a href="">All</a>
+            </li>
+            <li>
+                <a href="">Clothes</a>
+            </li>
+            <li>
+                <a href="">Electronics</a>
+            </li>
+            <li>
+                <a href="">Furnitures</a>
+            </li>
+            <li>
+                <a href="">Toys</a>
+            </li>
+            <li>
+                <a href="">Others</a>
+            </li>
+
+        </ul>
+        
+        <ul>
+            <li>
+                <a href="">My orders</a>
+            </li><li>
+                <a href="">My occount</a>
+            </li>
+
+        </ul>
+
+        <ul class="email" >
+            <li>
+                <a href="" >platzi@example.com</a>
+            </li>
+            <li>
+                <a href="">Sing out</a>
+            </li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>
