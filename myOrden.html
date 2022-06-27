@@ -47,37 +47,75 @@
             display: grid;
             grid-template-rows: auto 1fr auto;
             width: 300px;
+        }*/
+
+        .myOrderContent{
+            display: flex;
+            flex-direction: column;
         }
 
-    .myOrderContent{
-        display: flex;
-        flex-direction: column;
-    }
-    .shoppingCart figure{
-        margin: 0;
-    }
+        
+        .order {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 16px;
+            background-color: var(--veryLightPink);
+            align-items: center;
+            margin-bottom: 24px;
+            border-radius: 8px;
+            padding: 0 24px;
+        }
+        .order p:nth-child(1){
+            display: flex;
+            flex-direction: column;
+        }
 
-    .shoppingCart figure img{
-        width: 120px;
-        border-radius: 20px;
+        .order p:nth-child(2){
+            text-align: end;
+            font-weight: bold;
+        }
+        
+        .order p span:nth-child(1){
+            font-size: var(--md);
+            font-weight: bold;
+        }
 
-    }
+        .order p span:nth-child(2){
+            font-size: var(--sm);
+            color: var(--veryLightPink);
+        }
 
-    .shoppingCart figure p:nth-child(2){
-        color: var(--veryLightPink);
+        .shoppingCart {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto !important;
+            gap: 16px;
+        }
+        .shoppingCart figure{
+            margin: 0;
+        }
 
-    }
-    .shoppingCart figure p:nth-child(3){
-        font-size: var(--md);
-        font-weight: bold;
-    }
-    .shoppingCart {
-        display: grid;
-        grid-template-columns: auto 1fr auto auto;
-        gap: 16px   ;
-    }
-   
+        .shoppingCart figure img {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+
+        }*/
+
+        
+        .shoppingCart figure p:nth-child(2) {
+            color: var(--veryLightPink);
+
+        }
+        
+        .shoppingCart figure p:nth-child(3) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        
+    
+
     </style>
+
 
 
 
@@ -87,13 +125,17 @@
         <div class="myOrderContainer">
             <h1 class="tittle">My order</h1>
             <div class="myOrderContent">
-                <p>
-                    <span>23.06.2022</span>
-                    <span>6 articles</span>
-                </p>
-                <p>
-                    $560.00
-                </p>
+                <div class="order">
+                    <p>
+                        <span>23.06.2022</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>
+                        $560.00
+                    </p>
+
+                </div>
+                
                 <div class="shoppingCart">
                     <figure>
                         <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike">
